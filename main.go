@@ -3,7 +3,7 @@
  * Usage: Estimates PI to the nth digit using the  Bailey–Borwein–Plouffe formula (BBP formula).
  * Author: Nyah Check
  */
-package main
+package NumGo
 
 import (
 	"fmt"
