@@ -16,7 +16,7 @@ import "errors"
 func Pi(n int) (float64, error) {
 	var result float64 = 0
 	if n >= 0 {
-		for i := 0; i < n; i++ {
+		for i := 0; i < 4*n+10; i++ {
 			result += (1.0 / 16.0 * float64(i)) * ((4.0 / (8.0*float64(i) + 1)) + (2.0 / (8.0*float64(i) + 4.0)) - (1.0 / (8.0*float64(i) + 5.0)) - (1.0 / (8.0*float64(i) + 6.0)))
 		}
 	} else {
