@@ -17,24 +17,24 @@ all: build
 
 build:
 	@for p in $(PACKAGE_LIST); do \
-		echo "==> Build $$p..."; \
+		echo "==> Build $$p."; \
 		$(GO_BUILD) $(TOP_PACKAGE_DIR)/$$p || exit 1; \
 	done
 test:
 	@for p in $(PACKAGE_LIST); do \
-		echo "==> Unit Testing $$p..."; \
+		echo "==> Unit Testing $$p."; \
 		$(GO_TEST) $(TOP_PACKAGE_DIR)/$$p || exit 1; \
 	done
 
 clean:
 	@for p in $(PACKAGE_LIST); do \
-		echo "==> Clean $$p..."; \
+		echo "==> Clean $$p."; \
 		$(GO_CLEAN) $(TOP_PACKAGE_DIR)/$$p; \
 	done
 
 fmt:
 	@for p in $(PACKAGE_LIST); do \
-		echo "==> Formatting $$p..."; \
+		echo "==> Formatting $$p."; \
 		$(GO_FMT) $(TOP_PACKAGE_DIR)/$$p || exit 1; \
 	done
 
