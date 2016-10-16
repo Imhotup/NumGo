@@ -12,9 +12,9 @@ import (
 
 func TestFibonacci(t *testing.T) {
 
-	for i := 0; i < 10; i++ {
+	for i := 1; i < 10; i++ {
 		value, _ := fibonacci(i)
-		if len(value) < 2 {
+		if len(value) < 1 {
 			t.Errorf("Fibonacci(%d) does not exist.", i)
 		} else {
 			fmt.Println(fibonacci(i))
